@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Calculator plus</title>
+</head>
+<body>
+
+<form method="post" action = "{% url 'index' %}">
+    {% csrf_token %}
+    <label>x1</label><input name="x1"></input><br/>
+    <label>x2</label><input name="x2"></input><br/>
+    <button type="submit" name="btn" value="add">+</button>
+    <button type="submit" name="btn" value="substract">-</button>
+    <button type="submit" name="btn" value="multiple">*</button>
+    <button type="submit" name="btn" value="division">/</button>
+</form>
+</body>
+</html>
